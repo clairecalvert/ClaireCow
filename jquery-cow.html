@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>Claire'sCow</title>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script>
+          $(document).ready(function(){
+            $("h1").click(function(){
+              $("#section1").addClass("fancy");
+              $("#section2").removeClass("fancy");
+            });
+            $("h2").click(function(){
+              $("#section1").addClass("secret");
+              $("#section2").removeClass("secret");
+
+            })
+          });
+  </script>
+  <style>
+
+          .fancy {
+            background-image: url(https://media.giphy.com/media/A5pcWMMIEO95S/giphy.gif);
+            background-repeat: no-repeat;
+            width:435px;
+            height:503px;
+          }
+
+          .secret {
+            background-image: url(http://www.cowpatti.com/files/theme/COW.png);
+            background-repeat: no-repeat;
+            height:503px;
+            weight:435px;
+          }
+
+          .section {
+            width:435px;
+            height:503px;
+          }
+
+  </style>
+</head>
+<body>
+  <h1>Show a fancy wig cow!</h1>
+    <section id="section1"></section>
+  <h2>Now show a fancy teeth cow, but beware: they are secretive and take over!</h2>
+    <section id="section2"></section>
+  <p>Fancy cows wear wigs sometimes, but one cow's fancy is another cow's paddy</p>
+</body>
+</html>
